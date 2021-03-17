@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Secure Bank</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+</head>
+</head>
+
+<body>
+    <!--Header part, only logo and ‘sign up’ button-->
+    <div id="div1">
+        <div id="div_logo">
+            <a href="main.html"><img id="logo" src="./img/logo.png" /></a> 
+        </div>
+        <div id="sign_up">
+            <a href="register.php"><button>Sign up</button></a>
+        </div>
+    </div>
+
+    <!--middle part, for logisting-->
+    <div id="div2">
+        <div id="banner_log">
+            <h1 class="heading">Welcome to Secure Bank</h1>
+            <br /><br />
+            <form id="log_on" method="post" action="login_engine.php" onsubmit="return validate();">
+                <br />
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" />
+                <br /> <br />
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" />
+                <br /> <br />
+                <input type="submit" value="Log in" name="submit" id="submit" />
+            </form>
+        </div>
+
+    </div>
+
+    <!--Foot part, for conection-->
+    <div id="div3">
+        <div id="contact">
+            <img src="img/phone.png" style="width:240px; height:auto" />
+            <br />
+            <a href="https://www.facebook.com/"><img src="./img/fb.png" style="width:50px; height:50px" /></a>
+            <a href="https://www.twitter.com/"><img src="./img/tw.png" style="width:50px; height:50px" /></a>
+            <a href="https://www.youtube.com/"><img src="./img/yt.png" style="width:50px; height:50px" /></a>
+            <center>
+                <p>Designed by LanYAO ( UserName: lyao0  StudentID: 506083 ) © 2019 Secure Bank Pty. Ltd</p>
+            </center>
+        </div>
+    </div>
+
+    <!--Validation process-->
+    <script>
+        function validate() {
+            $('.error').remove();
+            if ($('input[name="username"]').val() == "") {
+                $('input[name="username"]').after('<div class="error">Please enter your full name.</div>');
+                event.preventDefault();
+                return false;
+            } else if ($('input[name="password"]').val() == "") {
+                $('input[name="password"]').after('<div class="error">Please enter your password.</div>');
+                event.preventDefault();
+                return false;
+            } else {
+                // alert("Log on sucssisfully.");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

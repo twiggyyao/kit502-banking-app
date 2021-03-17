@@ -1,0 +1,241 @@
+/* "#"=id   "."=class */
+
+/*Page size, background diagram*/
+body,html {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    height: 100%;
+    width: 100%;
+    min-width: 800px;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Single element definition*/
+button {
+    width: auto;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    background: black;
+    opacity: 0.80;
+    border-radius: 40px;
+    padding: 2px 30px 2px 30px;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    align-content: center;
+}
+table {
+width:90%;
+margin: auto;
+text-align:center;
+}
+td, th {
+font-size:14px; 
+border:0.5px;
+padding:2px;
+text-align: center;
+}
+tr:nth-child(even) {
+    background-color: gray;
+}
+tr:hover {
+    background-color: #6AA7FD;
+}
+
+.tableDiv350{
+	height:350px;
+	overflow-y:auto;
+}
+
+.tableDiv300{
+	height:300px;
+	overflow-y:auto;
+}
+
+.tableDiv250{
+	height:250px;
+	overflow-y:auto;
+}
+
+.tableDiv200{
+	height:200px;
+	overflow-y:auto;
+}
+
+.tableDiv150{
+	height:150px;
+	overflow-y:auto;
+}
+
+/*Page partition*/
+#div1 {
+    height: 5%;
+}
+#div2 {
+    height: 70%;
+}
+#div3 {
+    height: 25%;
+    vertical-align: bottom;
+}
+
+
+/*header part definition*/
+#div_logo {
+    float: left;
+    width: 20%;
+    top: 5px;
+    left: 40px;
+    position: fixed;
+}
+#logo {
+    width: auto;
+    height: 80px;
+}
+div#sign_up {
+    top: 15px;
+    right: 80px;
+    position: fixed;
+}
+
+/* footer part definition */
+#contact {
+    left: 40px;
+    width:100%;
+    margin-top: auto;
+    margin-left: 60px;
+    color: white;
+}
+
+
+/* main.php middle part definition*/
+div#banner_log {
+    position: fixed;
+    top: 150px;
+    right: 150px;
+    width: 600px;
+    height: 350px;
+    background-color: black;
+    opacity: 0.80;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px 7px 5px 5px;
+}
+form#log_on input[type=text],
+form#log_on input[type=password], 
+form#register input[type=text],
+form#register input[type=password],
+form#add_acc input[type=text],
+form#add_acc input[type=password]{
+    
+    width: 400px;
+    padding: 12px 5px;
+    outline: none;
+    border: none;
+    color: gray;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+form#log_on input[type=submit],
+form#register input[type=submit],
+form#add_acc input[type=submit]{
+    height: 80px;
+    width: 200px;
+    font-size:24px;
+    font-weight: bolder;
+}
+.error{
+    color:#6AA7FD;
+}
+
+/* login_user.php middle part definition */
+ul {
+    top: 100px;
+    left: 40px;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#bar a {
+    float: left;
+    width: auto;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: gray;
+    opacity: 0.80;
+    padding: 0.2em 2em;
+    border-right: 1px solid white;
+}
+#bar a:hover {
+    background-color: black;
+}
+li {
+    display: inline
+}
+
+div.left {
+    float: left;
+    top: 124px;
+    left: 40px;
+    position: fixed;
+    width: 960px;
+    height: 400px;
+    margin: 0;
+    padding: 1em;
+    background-color: black;
+    opacity: 0.80;
+    color: white;
+}
+div.content {
+    top: 124px;
+    left: 1035px;
+    position: fixed;
+    width: 230px;
+    height: 400px;
+    padding: 1em;
+    background-color: black;
+    opacity: 0.80;
+    color: white;
+}
+
+/* register.php middle part definition */
+#register {
+    height: 80%;
+    margin-top: 120px;
+    max-width: 650px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0, 8);
+    box-sizing: border-box;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
